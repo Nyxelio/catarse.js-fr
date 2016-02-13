@@ -13,7 +13,7 @@ window.c.AonAdminProjectDetailsExplanation = (function(m, h) {
             var explanation = function(resource) {
                 var stateText = {
                     online: [
-                        m('span', 'Você pode receber apoios até 23hs59min59s do dia ' + h.momentify(resource.zone_expires_at) + '. Lembre-se, é tudo-ou-nada e você só levará os recursos captados se bater a meta dentro desse prazo.')
+                        m('span', 'Vous avez jusqu\'au ' + h.momentify(resource.zone_expires_at) + ' à 23h59min. Tout projet n\'ayant pas atteint son objectif sera refusé.')
                     ],
                     successful: [
                         m('span.fontweight-semibold', resource.user.name + ', comemore que você merece!'),
