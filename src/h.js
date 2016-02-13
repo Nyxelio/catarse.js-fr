@@ -57,10 +57,10 @@ window.c.h = ((m, moment, I18n) => {
         },
 
         translatedTimeUnits = {
-            days: 'dias',
-            minutes: 'minutos',
-            hours: 'horas',
-            seconds: 'segundos'
+            days: 'Jours',
+            minutes: 'Minutes',
+            hours: 'Heures',
+            seconds: 'Secondes'
         },
         //Object manipulation helpers
         translatedTime = (time) => {

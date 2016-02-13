@@ -32,8 +32,8 @@ window.c.root.ProjectsHome = (((m, c, moment, h, _) => {
             return [
                 m('.w-section.hero-full.hero-2016', [
                     m('.w-container.u-text-center', [
-                        m('.fontsize-megajumbo.u-marginbottom-60.fontweight-semibold.fontcolor-negative', I18n.t('title', I18nScope())),
-                        m('a[href="http://2015.catarse.me/"].btn.btn-large.u-marginbottom-10.btn-inline', I18n.t('cta', I18nScope()))
+                        m('.fontsize-megajumbo.u-marginbottom-60.fontweight-semibold.fontcolor-negative', I18n.t('title', I18nScope()))
+                        //m('a[href="http://2015.catarse.me/"].btn.btn-large.u-marginbottom-10.btn-inline', I18n.t('cta', I18nScope()))
                     ])
                 ]),
                 _.map(ctrl.collections, (collection) => {

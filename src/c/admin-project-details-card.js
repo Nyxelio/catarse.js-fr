@@ -16,35 +16,35 @@ window.c.AdminProjectDetailsCard = ((m, h, moment) => {
                         statusText = {
                             online: {
                                 cssClass: 'text-success',
-                                text: 'NO AR'
+                                text: 'EN COURS'
                             },
                             successful: {
                                 cssClass: 'text-success',
-                                text: 'FINANCIADO'
+                                text: 'FINANCE'
                             },
                             failed: {
                                 cssClass: 'text-error',
-                                text: 'NÃO FINANCIADO'
+                                text: 'NON FINANCE'
                             },
                             waiting_funds: {
                                 cssClass: 'text-waiting',
-                                text: 'AGUARDANDO'
+                                text: 'EN COURS DE VALIDATION'
                             },
                             rejected: {
                                 cssClass: 'text-error',
-                                text: 'RECUSADO'
+                                text: 'REFUSE'
                             },
                             draft: {
                                 cssClass: '',
-                                text: 'RASCUNHO'
+                                text: 'PROJET'
                             },
                             in_analysis: {
                                 cssClass: '',
-                                text: 'EM ANÁLISE'
+                                text: 'EN COURS'
                             },
                             approved: {
                                 cssClass: 'text-success',
-                                text: 'APROVADO'
+                                text: 'APPROUVE'
                             }
                         };
 
@@ -78,7 +78,7 @@ window.c.AdminProjectDetailsCard = ((m, h, moment) => {
                         m('span.fontcolor-secondary', 'Status:'), ' ',
                         m('span', {
                             class: statusTextObj.cssClass
-                        }, (ctrl.isFinalLap() && project.open_for_contributions ? 'RETA FINAL' : statusTextObj.text)), ' '
+                        }, (ctrl.isFinalLap() && project.open_for_contributions ? 'Dernière ligne droite' : statusTextObj.text)), ' '
                     ]), (() => {
                         if (project.is_published) {
                             return [
@@ -91,25 +91,25 @@ window.c.AdminProjectDetailsCard = ((m, h, moment) => {
                                 ]),
                                 m('.w-row', [
                                     m('.w-col.w-col-3.w-col-small-3.w-col-tiny-6', [
-                                        m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'financiado'),
+                                        m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'Financé'),
                                         m('.fontweight-semibold.fontsize-large.lineheight-tight', progress + '%')
                                     ]),
                                     m('.w-col.w-col-3.w-col-small-3.w-col-tiny-6', [
-                                        m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'levantados'),
+                                        m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'relevé'),
                                         m('.fontweight-semibold.fontsize-large.lineheight-tight', [
                                             'R$ ' + h.formatNumber(project.pledged, 2),
                                         ]),
                                     ]),
                                     m('.w-col.w-col-3.w-col-small-3.w-col-tiny-6', [
-                                        m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'apoios'),
+                                        m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'Soutien'),
                                         m('.fontweight-semibold.fontsize-large.lineheight-tight', project.total_contributions)
                                     ]),
                                     m('.w-col.w-col-3.w-col-small-3.w-col-tiny-6', [
                                         (_.isNull(project.expires_at) ? [
-                                            m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'iniciado há'),
+                                            m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'Commencé'),
                                             m('.fontweight-semibold.fontsize-large.lineheight-tight', elapsedTextObj.total + ' ' + elapsedTextObj.unit)
                                         ] : [
-                                             m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'restam'),
+                                             m('.fontcolor-secondary.lineheight-tighter.fontsize-small', 'restant'),
                                              m('.fontweight-semibold.fontsize-large.lineheight-tight', remainingTextObj.total + ' ' + remainingTextObj.unit)
                                          ])
                                     ])

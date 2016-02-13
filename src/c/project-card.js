@@ -46,13 +46,13 @@ window.c.ProjectCard = ((m, h, models, I18n) => {
                             ]),
                             m('.w-col.w-col-4.w-col-small-4.w-col-tiny-4.u-text-center-small-only', [
                                 m('.fontsize-smaller.fontweight-semibold', `R$ ${h.formatNumber(project.pledged)}`),
-                                m('.fontsize-smallest.lineheight-tightest', 'Levantados')
+                                m('.fontsize-smallest.lineheight-tightest', 'Relevé')
                             ]),
                             m('.w-col.w-col-4.w-col-small-4.w-col-tiny-4.u-text-right', project.expires_at ? [
                                 m('.fontsize-smaller.fontweight-semibold', `${remainingTextObj.total} ${remainingTextObj.unit}`),
                                 m('.fontsize-smallest.lineheight-tightest', (remainingTextObj.total > 1) ? 'Restantes' : 'Restante')
                             ] : [
-                                m('.fontsize-smallest.lineheight-tight', ['Prazo em',m('br'),'aberto'])
+                                m('.fontsize-smallest.lineheight-tight', ['Statut',m('br'),'Ouvert'])
                             ])
                         ])
                     ])

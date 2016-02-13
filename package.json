@@ -1,8 +1,7 @@
 {
   "name": "catarse.js-fr",
   "version": "0.8.0",
-  "author": "Nyxelio"
-  ],
+  "author": "Nyxelio",
   "description": "French Catarse JS components",
   "devDependencies": {
     "gulp": "^3.9.0",

@@ -32,27 +32,27 @@ window.c.vms.projectFilters = ((m, h, moment) => {
 
         return {
             recommended: {
-                title: 'Recomendados',
+                title: 'Recommandé',
                 filter: recommended
             },
             online: {
-                title: 'No ar',
+                title: 'En ligne',
                 filter: online
             },
             expiring: {
-                title: 'Reta final',
+                title: 'Fermé',
                 filter: expiring
             },
             successful: {
-                title: 'Bem-sucedidos',
+                title: 'réussi',
                 filter: successful
             },
             recent: {
-                title: 'Recentes',
+                title: 'récent',
                 filter: recent
             },
             near_me: {
-                title: 'Próximos a mim',
+                title: 'A proximité',
                 filter: nearMe
             }
         };

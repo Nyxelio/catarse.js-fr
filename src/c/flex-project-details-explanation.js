@@ -43,10 +43,9 @@ window.c.FlexAdminProjectDetailsExplanation = ((m, h, _) => {
                         m('a.alt-link[href="/guides"]', 'guia dos realizadores'), '.'
                     ],
                     draft: [
-                        m('span.fontweight-semibold', resource.user.name + ', construa o seu projeto!'),
-                        ' Quanto mais cuidadoso e bem formatado for um projeto, maiores as chances de ele ser bem sucedido na sua campanha de captação. ',
-                        'Antes de enviar seu projeto para a nossa análise, preencha todas as abas ao lado com carinho. Você pode salvar as alterações e voltar ao rascunho de projeto quantas vezes quiser. ',
-                        'Quando tudo estiver pronto, clique no botão PUBLICAR.'
+                        m('span.fontweight-semibold', resource.user.name + ', Construisez votre projet !'),
+                        ' Les projets bien construits ont plus de chance de réussir. ',
+                        'Remplissez tous les onglets avec soin. Une fois créé, vous pouvez cliquer sur le bouton Publier.'
                     ],
                 };
 
