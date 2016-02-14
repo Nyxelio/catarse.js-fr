@@ -97,7 +97,7 @@ window.c.admin.Contributions = (function(m, c, h) {
                     error: error
                 },
                 data: {
-                    label: 'Apoios'
+                    label: 'Donateurs'
                 },
                 submit: submit
             };

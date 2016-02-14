@@ -51,12 +51,12 @@ window.c.ProjectTabs = ((m, h) => {
                             m('.w-col.w-col-8', [!_.isEmpty(rewards()) ?
                                 m('a[id="rewards-link"][class="w-hidden-main w-hidden-medium dashboard-nav-link mf ' + (h.hashMatch('#rewards') ? 'selected' : '') + '"][href="#rewards"]', {
                                     style: 'float: left;'
-                                }, 'Recompensas') : m('a[id="rewards-link"][class="w-hidden-main w-hidden-medium dashboard-nav-link mf ' + (h.hashMatch('#contribution_suggestions') ? 'selected' : '') + '"][href="#contribution_suggestions"]', {
+                                }, 'Récompenses') : m('a[id="rewards-link"][class="w-hidden-main w-hidden-medium dashboard-nav-link mf ' + (h.hashMatch('#contribution_suggestions') ? 'selected' : '') + '"][href="#contribution_suggestions"]', {
                                     style: 'float: left;'
                                 }, 'Valores Sugeridos'),
                                 m('a[id="about-link"][class="dashboard-nav-link mf ' + (h.hashMatch('#about') || h.hashMatch('') ? 'selected' : '') + ' "][href="#about"]', {
                                     style: 'float: left;'
-                                }, 'Sobre'),
+                                }, 'Résumé'),
                                 m('a[id="posts-link"][class="dashboard-nav-link mf ' + (h.hashMatch('#posts') ? 'selected' : '') + '"][href="#posts"]', {
                                     style: 'float: left;'
                                 }, [
@@ -66,13 +66,13 @@ window.c.ProjectTabs = ((m, h) => {
                                 m('a[id="contributions-link"][class="w-hidden-small w-hidden-tiny dashboard-nav-link mf ' + (h.hashMatch('#contributions') ? 'selected' : '') + '"][href="#contributions"]', {
                                     style: 'float: left;'
                                 }, [
-                                    'Apoios ',
+                                    'Donateurs',
                                     m('span.badge.w-hidden-small.w-hidden-tiny', project() ? project().total_contributions : '-')
                                 ]),
                                 m('a[id="comments-link"][class="dashboard-nav-link mf ' + (h.hashMatch('#comments') ? 'selected' : '') + '"][href="#comments"]', {
                                     style: 'float: left;'
                                 }, [
-                                    'Comentários ',
+                                    'Commentaires',
                                     project() ? m('fb:comments-count[href="http://www.catarse.me/' + project().permalink + '"][class="badge project-fb-comment w-hidden-small w-hidden-tiny"][style="display: inline"]', m.trust('&nbsp;')) : '-'
                                 ]),
                             ]),

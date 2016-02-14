@@ -14,13 +14,13 @@ window.c.ProjectUserCard = ((m, _, h) => {
                             m('.fontsize-smallest', [
                                 h.pluralize(userDetail.total_published_projects, ' membre', ' membres'),
                                 m.trust('&nbsp;&nbsp;|&nbsp;&nbsp;'),
-                                h.pluralize(userDetail.total_contributed_projects, ' apoiado', ' apoiados')
+                                h.pluralize(userDetail.total_contributed_projects, ' donateur', ' donateurs')
                             ]),
                             m('ul.w-hidden-tiny.w-hidden-small.w-list-unstyled.fontsize-smaller.fontweight-semibold.u-margintop-20.u-marginbottom-20', [
                                 (!_.isEmpty(userDetail.facebook_link) ? m('li', [
-                                    m('a.link-hidden[itemprop="url"][href="' + userDetail.facebook_link + '"][target="_blank"]', 'Perfil no Facebook')
+                                    m('a.link-hidden[itemprop="url"][href="' + userDetail.facebook_link + '"][target="_blank"]', 'Pas de profil Facebook')
                                 ]) : ''), (!_.isEmpty(userDetail.twitter_username) ? m('li', [
-                                    m('a.link-hidden[itemprop="url"][href="https://twitter.com/' + userDetail.twitter_username + '"][target="_blank"]', 'Perfil no Twitter')
+                                    m('a.link-hidden[itemprop="url"][href="https://twitter.com/' + userDetail.twitter_username + '"][target="_blank"]', 'Pas de profil Twitter')
                                 ]) : ''),
                                 _.map(userDetail.links, (link) => {
                                     var parsedLink = h.parseUrl(link);

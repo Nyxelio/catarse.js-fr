@@ -29,13 +29,13 @@ window.c.ProjectAbout = ((m, c, h) => {
                     ] : '',
                 ]),
                 m('.w-col.w-col-4.w-hidden-small.w-hidden-tiny', !_.isEmpty(args.rewardDetails()) ? [
-                    m('.fontsize-base.fontweight-semibold.u-marginbottom-30', 'Recompensas'),
+                    m('.fontsize-base.fontweight-semibold.u-marginbottom-30', 'Récompenses'),
                     m.component(c.ProjectRewardList, {
                         project: project,
                         rewardDetails: args.rewardDetails
                     }), fundingPeriod()
                 ] : [
-                    m('.fontsize-base.fontweight-semibold.u-marginbottom-30', 'Sugestões de apoio'),
+                    m('.fontsize-base.fontweight-semibold.u-marginbottom-30', 'Exemples de contributions'),
                     m.component(c.ProjectSuggestedContributions, {project: project}),
                     fundingPeriod()
                 ])
