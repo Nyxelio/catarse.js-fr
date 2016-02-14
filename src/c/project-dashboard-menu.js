@@ -27,7 +27,7 @@ window.c.ProjectDashboardMenu = ((m, _, h) => {
         },
         view: (ctrl, args) => {
             const project = args.project(),
-                  projectRoute = '/projects/fr/' + project.id,
+                  projectRoute = '/fr/projects/' + project.id,
                   editRoute = projectRoute + '/edit',
                   editLinkClass = 'dashboard-nav-link-left ' + (project.is_published ? 'indent' : '');
             let optionalOpt = (project.mode === 'flex' ? m('span.fontsize-smallest.fontcolor-secondary', ' (opcional)') : '');

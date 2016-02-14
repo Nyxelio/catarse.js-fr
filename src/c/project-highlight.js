@@ -32,7 +32,7 @@ window.c.ProjectHighlight = ((m, _, h, c) => {
                     ]),
                     m('button#share-box.btn.btn-small.btn-terciary.btn-inline', {
                         onclick: ctrl.displayShareBox.toggle
-                    }, 'Compartilhar'), (ctrl.displayShareBox() ? m.component(c.ProjectShareBox, {
+                    }, 'Partager'), (ctrl.displayShareBox() ? m.component(c.ProjectShareBox, {
                         project: project,
                         displayShareBox: ctrl.displayShareBox
                     }) : '')

@@ -15,8 +15,8 @@ window.c.ProjectMode = ((m, c, h, _) => {
             let project = args.project(),
                 mode = project.mode,
                 modeImgSrc = (mode === 'aon') ? '/assets/aon-badge.png' : '/assets/flex-badge.png',
-                modeTitle = (mode === 'aon') ? 'Campanha Tudo-ou-nada ' : 'Campanha Flexível ',
-                goal = (_.isNull(project.goal) ? 'não definida' : h.formatNumber(project.goal)),
+                modeTitle = (mode === 'aon') ? 'Campagne ' : 'Campanha Flexível ',
+                goal = (_.isNull(project.goal) ? 'indéfini' : h.formatNumber(project.goal)),
                 tooltip = (el) => {
                     return m.component(c.Tooltip, {
                         el: el,
@@ -30,7 +30,7 @@ window.c.ProjectMode = ((m, c, h, _) => {
                     m(`img[src="${modeImgSrc}"][width='30']`)
                 ]),
                 m('.w-col.w-col-10.w-col-small-10.w-col-tiny-10', [
-                    m('.fontsize-smaller.fontweight-semibold', 'Meta R$ ' + h.selfOrEmpty(goal, '--')),
+                    m('.fontsize-smaller.fontweight-semibold', 'Objectif R€ ' + h.selfOrEmpty(goal, '--')),
                     m('.w-inline-block.fontsize-smallest._w-inline-block', [
                         modeTitle,
                         tooltip('span.w-inline-block.tooltip-wrapper.fa.fa-question-circle.fontcolor-secondary')

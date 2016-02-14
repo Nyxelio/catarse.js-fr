@@ -12,7 +12,7 @@ window.c.ProjectUserCard = ((m, _, h) => {
                                 m('a.link-hidden[href="/users/' + userDetail.id + '"]', userDetail.name)
                             ]),
                             m('.fontsize-smallest', [
-                                h.pluralize(userDetail.total_published_projects, ' criado', ' criados'),
+                                h.pluralize(userDetail.total_published_projects, ' membre', ' membres'),
                                 m.trust('&nbsp;&nbsp;|&nbsp;&nbsp;'),
                                 h.pluralize(userDetail.total_contributed_projects, ' apoiado', ' apoiados')
                             ]),

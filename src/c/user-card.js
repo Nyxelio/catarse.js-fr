@@ -25,7 +25,7 @@ window.c.UserCard = (function(m, _, models, h) {
                                 m('a.link-hidden[href="/users/' + userDetail.id + '"]', userDetail.name)
                             ]),
                             m('.fontsize-smallest.lineheight-looser[itemprop="address"]', userDetail.address_city),
-                            m('.fontsize-smallest', userDetail.total_published_projects + ' projetos criados'),
+                            m('.fontsize-smallest', userDetail.total_published_projects + ' projetos membres'),
                             m('.fontsize-smallest', 'apoiou ' + userDetail.total_contributed_projects + ' projetos')
                         ]),
                     ]),

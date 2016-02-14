@@ -59,10 +59,10 @@ window.c.ProjectContributions = ((m, models, h, _) => {
                                 m('.fontsize-base.fontweight-semibold', [
                                     m('a.link-hidden-dark[href="/users/' + contribution.user_id + '"]', contribution.user_name), (contribution.is_owner_or_admin ?
                                         m('.fontsize-smaller', [
-                                            'R$ ' + h.formatNumber(contribution.value, 2, 3), (contribution.anonymous ? [m.trust('&nbsp;-&nbsp;'), m('strong', 'Apoiador anônimo')] : '')
+                                            'R€ ' + h.formatNumber(contribution.value, 2, 3), (contribution.anonymous ? [m.trust('&nbsp;-&nbsp;'), m('strong', 'Apoiador anônimo')] : '')
                                         ]) : ''),
                                     m('.fontsize-smaller', h.momentify(contribution.created_at, 'DD/MM/YYYY, HH:mm') + 'h'),
-                                    m('.fontsize-smaller', (contribution.total_contributed_projects > 1 ? 'Apoiou este e mais outros ' + contribution.total_contributed_projects + ' projetos' : 'Apoiou somente este projeto até agora'))
+                                    m('.fontsize-smaller', (contribution.total_contributed_projects > 1 ? 'Apoiou este e mais outros ' + contribution.total_contributed_projects + ' projetos' : "Investit uniquement sur ce projet pour l'instant"))
                                 ])
                             ])
                         ]),

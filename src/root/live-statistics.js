@@ -27,7 +27,7 @@ window.c.root.LiveStatistics = ((m, models, h, _, JSON) => {
                 m('.w-container.u-text-center', _.map(ctrl.pageStatistics(), (stat) => {
                     return [m('img.u-marginbottom-60[src="https://daks2k3a4ib2z.cloudfront.net/54b440b85608e3f4389db387/55ada5dd11b36a52616d97df_symbol-catarse.png"]'),
                         m('.fontcolor-negative.u-marginbottom-40', [
-                            m('.fontsize-megajumbo.fontweight-semibold', 'R$ ' + h.formatNumber(stat.total_contributed, 2, 3)),
+                            m('.fontsize-megajumbo.fontweight-semibold', 'R€ ' + h.formatNumber(stat.total_contributed, 2, 3)),
                             m('.fontsize-large', 'Doados para projetos publicados por aqui')
                         ]),
                         m('.fontcolor-negative.u-marginbottom-60', [

@@ -38,7 +38,7 @@ window.c.UserBalance = ((m, h, _, models, c) => {
                         m('.w-col.w-col-8.u-text-center-small-only.u-marginbottom-20', [
                             m('.fontsize-larger', [
                                 I18n.t('totals', I18nScope()),
-                                m('span.text-success', `R$ ${h.formatNumber(balance.amount, 2, 3)}`)
+                                m('span.text-success', `R€ ${h.formatNumber(balance.amount, 2, 3)}`)
                             ])
                         ]),
                         m('.w-col.w-col-4', [

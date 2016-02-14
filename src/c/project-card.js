@@ -45,7 +45,7 @@ window.c.ProjectCard = ((m, h, models, I18n) => {
                                 m('.fontsize-base.fontweight-semibold', `${Math.ceil(project.progress)}%`)
                             ]),
                             m('.w-col.w-col-4.w-col-small-4.w-col-tiny-4.u-text-center-small-only', [
-                                m('.fontsize-smaller.fontweight-semibold', `R$ ${h.formatNumber(project.pledged)}`),
+                                m('.fontsize-smaller.fontweight-semibold', `R€ ${h.formatNumber(project.pledged)}`),
                                 m('.fontsize-smallest.lineheight-tightest', 'Relevé')
                             ]),
                             m('.w-col.w-col-4.w-col-small-4.w-col-tiny-4.u-text-right', project.expires_at ? [

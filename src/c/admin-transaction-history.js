@@ -13,7 +13,7 @@ window.c.AdminTransactionHistory = (function(m, h, _) {
                     name: 'Estorno realizado'
                 }, {
                     date: contribution.created_at,
-                    name: 'Apoio criado'
+                    name: 'Apoio membre'
                 }, {
                     date: contribution.refused_at,
                     name: 'Apoio cancelado'

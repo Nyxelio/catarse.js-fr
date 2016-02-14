@@ -4,7 +4,7 @@
  * Example:
  * m.component(c.ProjectDataChart, {
  *     collection: ctrl.contributionsPerDay,
- *     label: 'R$ arrecadados por dia',
+ *     label: 'R€ arrecadados por dia',
  *     dataKey: 'total_amount'
  * })
  */

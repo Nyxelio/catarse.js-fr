@@ -9,7 +9,7 @@ window.c.AdminReward = (function(m, c, h, _) {
                 m('.fontsize-smallest.lineheight-looser', reward.id ? [
                     'ID: ' + reward.id,
                     m('br'),
-                    'Valor mínimo: R$' + h.formatNumber(reward.minimum_value, 2, 3),
+                    'Valor mínimo: R€' + h.formatNumber(reward.minimum_value, 2, 3),
                     m('br'),
                     m.trust('Disponíveis: ' + available + ' / ' + (reward.maximum_contributions || '&infin;')),
                     m('br'),

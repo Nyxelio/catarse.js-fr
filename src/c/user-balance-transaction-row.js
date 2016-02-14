@@ -30,21 +30,21 @@ window.c.UserBalanceTransactionRow = ((m, h) => {
                                          m('div', [
                                              m('span.fontsize-smaller.fontcolor-secondary', I18n.t('debit', I18nScope())),
                                              m.trust('&nbsp;'),
-                                             m('span.fontsize-base.text-error', `R$ ${h.formatNumber(Math.abs(item.debit), 2, 3)}`)
+                                             m('span.fontsize-base.text-error', `R€ ${h.formatNumber(Math.abs(item.debit), 2, 3)}`)
                                          ])
                                      ]),
                                      m('.w-col.w-col-4', [
                                          m('div', [
                                              m('span.fontsize-smaller.fontcolor-secondary', I18n.t('credit', I18nScope())),
                                              m.trust('&nbsp;'),
-                                             m('span.fontsize-base.text-success', `R$ ${h.formatNumber(item.credit, 2, 3)}`)
+                                             m('span.fontsize-base.text-success', `R€ ${h.formatNumber(item.credit, 2, 3)}`)
                                          ])
                                      ]),
                                      m('.w-col.w-col-4', [
                                          m('div', [
                                              m('span.fontsize-smaller.fontcolor-secondary', I18n.t('totals', I18nScope())),
                                              m.trust('&nbsp;'),
-                                             m('span.fontsize-base', `R$ ${h.formatNumber(item.total_amount, 2, 3)}`)
+                                             m('span.fontsize-base', `R€ ${h.formatNumber(item.total_amount, 2, 3)}`)
                                          ])
                                      ])
                                  ])
@@ -58,7 +58,7 @@ window.c.UserBalanceTransactionRow = ((m, h) => {
                          return m('div',[
                              m('.w-row.fontsize-small.u-marginbottom-10', [
                                  m('.w-col.w-col-2', [
-                                     m(`.text-${(pos ? 'success' : 'error')}`, `${pos ? '+' : '-'} R$ ${h.formatNumber(Math.abs(transaction.amount), 2, 3)}`)
+                                     m(`.text-${(pos ? 'success' : 'error')}`, `${pos ? '+' : '-'} R€ ${h.formatNumber(Math.abs(transaction.amount), 2, 3)}`)
                                  ]),
                                  m('.w-col.w-col-10', [
                                      m('div', `${transaction.event_name} ${transaction.origin_object.name}`)
